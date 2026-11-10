@@ -88,6 +88,10 @@ require("lazy").setup({
 -- Options
 vim.opt.relativenumber = false
 
+-- Filetypes
+vim.filetype.add({ extension = { hy = "hy" } })
+vim.treesitter.language.register("clojure", "hy")
+
 -- Terminal clipboard (OSC 52)
 local osc52 = require("vim.ui.clipboard.osc52")
 vim.g.clipboard = {

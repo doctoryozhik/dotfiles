@@ -242,7 +242,7 @@ podman-tui = "latest"             # terminal ui for podman containers and pods
 kubectl = "latest"                # cli for k8s, because k8s is just always good and totally not complex at all
 k9s = "latest"                    # tui for k8s, but also reference to a dog, and I like dogs
 hadolint = "latest"               # dockerfile linter
-"pipx:podman-compose" = "latest"  # compose specification runner for podman
+"pypi:podman-compose" = "latest"  # compose specification runner for podman
 "github:pkgforge/soar" = "latest" # the appimage goat
 
 # Docs, Data & Text --------------------------------------------
@@ -341,6 +341,11 @@ ruff = "latest"               # python linter and formatter
 ty = "latest"                 # python type checker
 "npm:basedpyright" = "latest" # python language server
 
+# Lua ------------------------------------------------------
+lua = "latest"                 # runtime so small it fits inside a game engine's coat pocket
+lua-language-server = "latest" # lua language server
+stylua = "latest"              # lua code formatter
+
 # Java & Kotlin & Android ----------------------------------
 java = "lts"                  # runtime, bring your own 40 lines of boilerplate
 google-java-format = "latest" # java code formatter
@@ -360,13 +365,7 @@ clj-kondo = "latest"                                                            
 babashka = "latest"                                                                                   # clojure scripting
 "http:neil" = { version = "main", url = "https://raw.githubusercontent.com/babashka/neil/main/neil" } # deps.edn tooling powered by babashka
 
-# Lua ------------------------------------------------------
-lua = "latest"                 # runtime so small it fits inside a game engine's coat pocket
-lua-language-server = "latest" # lua language server
-stylua = "latest"              # lua code formatter
-
-# Odin -----------------------------------------------------
-odin = "latest" # the language of the gods
-
-# Zig ------------------------------------------------------
-zig = "latest" # for those who think the rust is a gov psyop
+# Other Languages (maybe add fennel lisp later ) ------------
+odin = "latest"      # the language of the gods
+zig = "latest"       # for those who think the rust is a gov psyop
+"pypi:hy" = "latest" # lisp dialect in python
