@@ -62,6 +62,7 @@ l = "eza -al"
 nv = "nvim"
 gst = "git status"
 lg = "lazygit"
+gu = "gitu"
 ghd = "gh-dash"
 ff = "fastfetch"
 kate = "flatpak run org.kde.kate"
@@ -215,8 +216,10 @@ restic = "latest"               # based backups
 
 # Git & Version Control ---------------------------------------
 jj = "latest"                          # old friend, in case we need to do a risky git operation
+git-lfs = "latest"                     # git extension for versioning large files
 gh = "latest"                          # github cli, for avoiding the website
 lazygit = "latest"                     # git tui, for avoiding git
+gitu = "latest"                        # magit-style git tui in rust
 delta = "latest"                       # git diff pager that makes diffs look intentional
 lefthook = "latest"                    # fast git hooks manager that actually runs
 pre-commit = "latest"                  # some other git hooks manager (just to have all)
@@ -227,6 +230,8 @@ communique = "latest"                  # editorialized release notes powered by 
 gitleaks = "latest"                    # detect secrets and passwords in git repos
 jactionlint = "latest"                 # static checker for github actions workflows
 zizmor = "latest"                      # static analysis tool for github actions
+git-filter-repo = "latest"             # rewrite git history without filter-branch tears
+wait-for-gh-rate-limit = "latest"      # wait for github rate limits to reset by jdx
 "aqua:tummychow/git-absorb" = "latest" # git commit --fixup made easy
 "aqua:dlvhdr/gh-dash" = "latest"       # github tui
 
@@ -321,9 +326,11 @@ prettier = "latest"                     # opinionated code formatter
 
 # Rust -----------------------------------------------------
 rust = { version = "latest", mr_boxington = true } # MR BOXINGTON NANI ?!
-cargo-binstall = "latest"                          # let cargo install binaries (for mise's cargo backend)
-rust-analyzer = "latest"                           # rust language server
 mr-boxington = "latest"                            # shared cargo build cache across worktrees by jdx
+rust-analyzer = "latest"                           # rust language server
+cargo-binstall = "latest"                          # let cargo install binaries (for mise's cargo backend)
+cargo-insta = "latest"                             # rust snapshot testing interactive reviewer
+cargo-dist = "latest"                              # rust binary distributor and github actions generator
 "github:evcxr/evcxr" = "latest"                    # interactive rust repl
 
 # Go -------------------------------------------------------

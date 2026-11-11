@@ -53,7 +53,7 @@ init = [
     clang gcc gcc-c++ make cmake ninja-build pkgconf-pkg-config \
     openssl-devel libffi-devel sqlite-devel readline-devel bzip2-devel xz-devel zlib-ng-compat-devel \
     podman shadow-utils socat nmap-ncat nftables \
-    git-lfs patch zstd pv \
+    patch zstd pv \
     strace gdb tcpdump bind-utils file tree lsof psmisc iotop-c \
     tig rlwrap feh \
     && dnf clean all
