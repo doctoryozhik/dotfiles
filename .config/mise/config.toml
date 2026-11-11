@@ -320,10 +320,11 @@ prettier = "latest"                     # opinionated code formatter
 "npm:@vtsls/language-server" = "latest" # typescript language server
 
 # Rust -----------------------------------------------------
-rust = "latest"           # runtime where the compiler is also your therapist
-cargo-binstall = "latest" # let cargo install binaries (for mise's cargo backend)
-rust-analyzer = "latest"  # rust language server
-mr-boxington = "latest"   # shared cargo build cache across worktrees by jdx
+rust = { version = "latest", mr_boxington = true } # MR BOXINGTON NANI ?!
+cargo-binstall = "latest"                          # let cargo install binaries (for mise's cargo backend)
+rust-analyzer = "latest"                           # rust language server
+mr-boxington = "latest"                            # shared cargo build cache across worktrees by jdx
+"github:evcxr/evcxr" = "latest"                    # interactive rust repl
 
 # Go -------------------------------------------------------
 go = "latest"                            # runtime with a gopher mascot and opinions about gofmt

@@ -26,6 +26,7 @@ config.mouse_bindings = {
 
 -- Keybinds ###############################################
 config.keys = {
+
 	-- Navigation & Editing -----------------------------------
 	{ key = "UpArrow", mods = "ALT", action = wezterm.action.SendKey({ key = "PageUp" }) },
 	{ key = "DownArrow", mods = "ALT", action = wezterm.action.SendKey({ key = "PageDown" }) },
