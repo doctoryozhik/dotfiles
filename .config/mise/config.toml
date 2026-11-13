@@ -275,7 +275,7 @@ postgres = "latest"                               # relational database manageme
 "github:tectonic-typesetting/tectonic" = "latest" # modern tex/latex engine
 "aqua:jorgerojas26/lazysql" = "latest"            # cross-platform database tui
 "cargo:eilmeldung" = "latest"                     # rss reader
-"cargo:monolith" = "latest"                       # bundle web page and assets into single offline html
+"github:Y2Z/monolith" = "latest"                  # bundle web page and assets into single offline html
 "pypi:trafilatura" = "latest"                     # scrape clean web text and markdown for nlp and pandoc
 "npm:percollate" = "latest"                       # turn web pages and feeds into readable pdf and epub books
 
