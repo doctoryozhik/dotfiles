@@ -185,12 +185,13 @@ environment = { OLLAMA_HOST = "127.0.0.1:11434", OLLAMA_KEEP_ALIVE = "5m" }
 
 [tools]
 # Terminal & Shell ------------------------------------------
-nushell = "latest"  # shell for people who think bash syntax is a personality flaw
-starship = "latest" # prompt that costs more compute than the shell itself
-zoxide = "latest"   # cd but it remembers where you live better than you do
-fzf = "latest"      # fuzzy finder, turns "where did I put that" into a keystroke
-gum = "latest"      # glamorous shell scripts, because bash deserves better
-shfmt = "latest"    # shell script parser and formatter
+nushell = "latest"    # shell for people who think bash syntax is a personality flaw
+starship = "latest"   # prompt that costs more compute than the shell itself
+zoxide = "latest"     # cd but it remembers where you live better than you do
+fzf = "latest"        # fuzzy finder, turns "where did I put that" into a keystroke
+gum = "latest"        # glamorous shell scripts, because bash deserves better
+shfmt = "latest"      # shell script parser and formatter
+shellcheck = "latest" # shell script analyzer
 
 # Editor & Code Intelligence -----------------------------------
 neovim = "latest"      # extensible modal text editor
@@ -274,6 +275,9 @@ postgres = "latest"                               # relational database manageme
 "github:tectonic-typesetting/tectonic" = "latest" # modern tex/latex engine
 "aqua:jorgerojas26/lazysql" = "latest"            # cross-platform database tui
 "cargo:eilmeldung" = "latest"                     # rss reader
+"cargo:monolith" = "latest"                       # bundle web page and assets into single offline html
+"pypi:trafilatura" = "latest"                     # scrape clean web text and markdown for nlp and pandoc
+"npm:percollate" = "latest"                       # turn web pages and feeds into readable pdf and epub books
 
 # Media, network & API -------------------------------------------
 xh = "latest"                                                                   # friendly and fast tool for sending http requests
@@ -373,7 +377,7 @@ clj-kondo = "latest"                                                            
 babashka = "latest"                                                                                   # clojure scripting
 "http:neil" = { version = "main", url = "https://raw.githubusercontent.com/babashka/neil/main/neil" } # deps.edn tooling powered by babashka
 
-# Other Languages (maybe add fennel lisp later ) ------------
+# Other Languages (maybe add fennel lisp later) ------------
 odin = "latest"      # the language of the gods
 zig = "latest"       # for those who think the rust is a gov psyop
 "pypi:hy" = "latest" # lisp dialect in python
