@@ -11,12 +11,13 @@ system_packages.ostree = "layer" # layer host packages via rpm-ostree on Fedora 
 [vars]
 git_name = { prompt = "Git author name", required = true }
 email = { prompt = "Git email", required = true }
-omp_model_default = { prompt = "OMP default model (e.g. ollama/qwen2.5-coder)", required = true }
-omp_model_smol = { prompt = "OMP smol model (e.g. ollama/llama3.2)", required = true }
-omp_model_slow = { prompt = "OMP slow model (e.g. ollama/deepseek-r1)", required = true }
 
-font = { prompt = "Terminal font", default = "JetBrainsMono Nerd Font Mono" }
-theme = { prompt = "Color theme (rose-pine, gruvbox, kanagawa, dark-terminal)", default = "rose-pine" }
+font = { default = "JetBrainsMono Nerd Font Mono" }
+theme = { default = "rose-pine" }
+
+omp_model_slow = { default = "UNCONFIGURED" }
+omp_model_default = { default = "UNCONFIGURED" }
+omp_model_smol = { default = "UNCONFIGURED" }
 
 [dotfile_groups.core]
 root = "~/.dotfiles"
