@@ -32,5 +32,5 @@
 
 [user]
   signingkey = ~/.ssh/git-sign.pub
-  name = {{ vars.git_name }}
+  name = {{ vars.name }}
   email = {{ vars.email }}

@@ -1,13 +1,14 @@
 # vim: set ft=yaml :
 # Tool: oh-my-pi / omp (https://github.com/can1357/oh-my-pi) — AI coding agent CLI harness
 
-setupVersion: 2
+setupVersion: 3
 
 # SYSTEM & STARTUP ###############################################
 power:
   sleepPrevention: "off"
 startup:
   quiet: true
+  setupWizard: false
 update:
   auto: false
 marketplace:
@@ -60,7 +61,6 @@ skills:
 
 # THINKING & MODELS ################################################
 defaultThinkingLevel: low
-textVerbosity: low
 modelRoles:
   slow: {{ vars.omp_model_slow }}
   default: {{ vars.omp_model_default }}

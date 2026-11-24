@@ -9,7 +9,7 @@ minimum_release_age = "3d"       # quarantine new releases
 system_packages.ostree = "layer" # layer host packages via rpm-ostree on Fedora Silverblue
 
 [vars]
-git_name = { prompt = "Git author name", required = true }
+name = { prompt = "Git author name", required = true }
 email = { prompt = "Git email", required = true }
 
 font = { default = "JetBrainsMono Nerd Font Mono" }
@@ -221,9 +221,9 @@ git-lfs = "latest"                     # git extension for versioning large file
 gh = "latest"                          # github cli, for avoiding the website
 lazygit = "latest"                     # git tui, for avoiding git
 delta = "latest"                       # git diff pager that makes diffs look intentional
-lefthook = "latest"                    # fast git hooks manager that actually runs
-pre-commit = "latest"                  # some other git hooks manager (just to have all)
-hk = "latest"                          # fast git hooks and linter runner by jdx
+prek = "latest"                        # drop-in fast pre-commit runner in rust
+lefthook = "latest"                    # fast polyglot git hooks manager
+hk = "latest"                          # git hooks and linter runner by jdx
 git-cliff = "latest"                   # changelog generator from conventional commits
 git-town = "latest"                    # generic, high-level git workflow engine
 communique = "latest"                  # editorialized release notes powered by AI by jdx
